@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- White background -->
+  <rect x="0" y="0" width="32" height="32" fill="white"/>
+  
+  <!-- Dark gray square -->
+  <rect x="2" y="8" width="4" height="4" fill="#4a5568"/>
+  
+  <!-- Green rectangle -->
+  <rect x="6" y="8" width="6" height="4" fill="#48bb78"/>
+  
+  <!-- Blue rectangle -->
+  <rect x="12" y="8" width="18" height="4" fill="#3182ce"/>
+  
+  <!-- RSM text -->
+  <text x="16" y="26" font-family="Arial, sans-serif" font-size="8" font-weight="bold" text-anchor="middle" fill="#4a5568">RSM</text>
+</svg>
