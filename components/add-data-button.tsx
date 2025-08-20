@@ -69,8 +69,8 @@ export function AddDataButton({ componentName, availableMetrics, onDataAdded }: 
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
-          <DialogTitle>Add Data for {componentName}</DialogTitle>
-          <DialogDescription>
+          <DialogTitle className="text-[#2D3748]">Add Data for {componentName}</DialogTitle>
+          <DialogDescription className="text-[#4A5568]">
             Add new monthly or yearly data for this component. Fill in the details below.
           </DialogDescription>
         </DialogHeader>
@@ -81,7 +81,7 @@ export function AddDataButton({ componentName, availableMetrics, onDataAdded }: 
               name="year"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Year</FormLabel>
+                  <FormLabel className="text-[#2D3748]">Year</FormLabel>
                   <Select onValueChange={field.onChange} defaultValue={field.value}>
                     <FormControl>
                       <SelectTrigger>
@@ -106,7 +106,7 @@ export function AddDataButton({ componentName, availableMetrics, onDataAdded }: 
               name="month"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Month</FormLabel>
+                  <FormLabel className="text-[#2D3748]">Month</FormLabel>
                   <Select onValueChange={field.onChange} defaultValue={field.value}>
                     <FormControl>
                       <SelectTrigger>
@@ -131,7 +131,7 @@ export function AddDataButton({ componentName, availableMetrics, onDataAdded }: 
               name="metric"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Metric</FormLabel>
+                  <FormLabel className="text-[#2D3748]">Metric</FormLabel>
                   <Select onValueChange={field.onChange} defaultValue={field.value}>
                     <FormControl>
                       <SelectTrigger>
@@ -156,7 +156,7 @@ export function AddDataButton({ componentName, availableMetrics, onDataAdded }: 
               name="value"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Value</FormLabel>
+                  <FormLabel className="text-[#2D3748]">Value</FormLabel>
                   <FormControl>
                     <Input placeholder="Enter value" {...field} />
                   </FormControl>
@@ -169,7 +169,7 @@ export function AddDataButton({ componentName, availableMetrics, onDataAdded }: 
               <Button type="button" variant="outline" onClick={() => setOpen(false)}>
                 Cancel
               </Button>
-              <Button type="submit">Add Data</Button>
+              <Button type="submit" className="bg-[#3F9C35] hover:bg-[#2D5A2A] text-white">Add Data</Button>
             </div>
           </form>
         </Form>

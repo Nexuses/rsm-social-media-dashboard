@@ -48,10 +48,10 @@ export function FollowersGrowthChart({ timeFilter }: FollowersGrowthChartProps) 
 
   const getChannelData = () => {
     const baseData = [
-      { platform: "LinkedIn", followers: 32800, color: "#0077B5" },
-      { platform: "Facebook", followers: 41800, color: "#1877F2" },
-      { platform: "Instagram", followers: 6100, color: "#E4405F" },
-      { platform: "Twitter", followers: 4800, color: "#1DA1F2" },
+      { platform: "LinkedIn", followers: 32800, color: "#009CDE" },
+      { platform: "Facebook", followers: 41800, color: "#3F9C35" },
+      { platform: "Instagram", followers: 6100, color: "#00153C" },
+      { platform: "Twitter", followers: 4800, color: "#63666A" },
     ]
 
     // Return the exact data without multipliers
@@ -68,7 +68,7 @@ export function FollowersGrowthChart({ timeFilter }: FollowersGrowthChartProps) 
         reach: 25000,
         impressions: 89000,
         growth: 8.2,
-        color: "#0077B5"
+        color: "#009CDE"
       },
       facebook: {
         followers: 41800,
@@ -77,7 +77,7 @@ export function FollowersGrowthChart({ timeFilter }: FollowersGrowthChartProps) 
         reach: 18000,
         impressions: 52000,
         growth: 15.7,
-        color: "#1877F2"
+        color: "#3F9C35"
       },
       twitter: {
         followers: 4800,
@@ -86,7 +86,7 @@ export function FollowersGrowthChart({ timeFilter }: FollowersGrowthChartProps) 
         reach: 12000,
         impressions: 38000,
         growth: 12.4,
-        color: "#1DA1F2"
+        color: "#63666A"
       },
       instagram: {
         followers: 6100,
@@ -95,7 +95,7 @@ export function FollowersGrowthChart({ timeFilter }: FollowersGrowthChartProps) 
         reach: 3200,
         impressions: 6800,
         growth: 18.5,
-        color: "#E4405F"
+        color: "#00153C"
       }
     }
     
@@ -108,11 +108,11 @@ export function FollowersGrowthChart({ timeFilter }: FollowersGrowthChartProps) 
   const chartConfig = {
     followers: {
       label: "Followers",
-      color: "hsl(var(--chart-1))",
+      color: "#009CDE",
     },
     growth: {
       label: "Growth",
-      color: "hsl(var(--chart-2))",
+      color: "#3F9C35",
     },
   }
 
@@ -128,8 +128,8 @@ export function FollowersGrowthChart({ timeFilter }: FollowersGrowthChartProps) 
       <div className="grid gap-6 md:grid-cols-2">
         <Card>
           <CardHeader>
-            <CardTitle>Followers Growth Trend</CardTitle>
-            <CardDescription>
+            <CardTitle className="text-[#2D3748]">Followers Growth Trend</CardTitle>
+            <CardDescription className="text-[#4A5568]">
               {timeFilter === "weekly" ? "Weekly" : timeFilter === "monthly" ? "Monthly" : "Annual"} followers growth
               across all platforms
             </CardDescription>
@@ -144,9 +144,9 @@ export function FollowersGrowthChart({ timeFilter }: FollowersGrowthChartProps) 
                   <Line
                     type="monotone"
                     dataKey="followers"
-                    stroke="var(--color-chart-1)"
+                    stroke="#009CDE"
                     strokeWidth={2}
-                    dot={{ fill: "var(--color-chart-1)" }}
+                    dot={{ fill: "#009CDE" }}
                   />
                 </LineChart>
               </ResponsiveContainer>
@@ -156,8 +156,8 @@ export function FollowersGrowthChart({ timeFilter }: FollowersGrowthChartProps) 
 
         <Card>
           <CardHeader>
-            <CardTitle>Followers by Platform</CardTitle>
-            <CardDescription>Current follower distribution across social media channels</CardDescription>
+            <CardTitle className="text-[#2D3748]">Followers by Platform</CardTitle>
+            <CardDescription className="text-[#4A5568]">Current follower distribution across social media channels</CardDescription>
           </CardHeader>
           <CardContent>
             <ChartContainer config={chartConfig}>
@@ -169,7 +169,7 @@ export function FollowersGrowthChart({ timeFilter }: FollowersGrowthChartProps) 
                   <Bar 
                     dataKey="followers" 
                     radius={[4, 4, 0, 0]}
-                    fill="#3B82F6"
+                    fill="#3F9C35"
                   />
                 </BarChart>
               </ResponsiveContainer>

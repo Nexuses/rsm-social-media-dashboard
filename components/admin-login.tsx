@@ -21,7 +21,7 @@ export function AdminLogin() {
       setUsername("")
       setPassword("")
     } else {
-      setError("Invalid credentials. Use admin/admin123")
+      setError("Invalid credentials. Use RSM-Admin/RSMkuwaitNex")
     }
   }
 
@@ -32,8 +32,8 @@ export function AdminLogin() {
   if (isAdmin) {
     return (
       <div className="flex items-center gap-2">
-        <Shield className="h-4 w-4 text-green-600" />
-        <span className="text-sm text-green-600 font-medium">Admin</span>
+        <Shield className="h-4 w-4 text-[#3F9C35]" />
+        <span className="text-sm text-[#3F9C35] font-medium">Admin</span>
         <Button size="sm" variant="outline" onClick={handleLogout}>
           <LogOut className="h-4 w-4 mr-2" />
           Logout
@@ -52,14 +52,14 @@ export function AdminLogin() {
       </DialogTrigger>
       <DialogContent className="sm:max-w-[400px]">
         <DialogHeader>
-          <DialogTitle>Admin Login</DialogTitle>
-          <DialogDescription>
+          <DialogTitle className="text-[#2D3748]">Admin Login</DialogTitle>
+          <DialogDescription className="text-[#4A5568]">
             Enter your admin credentials to access data management features.
           </DialogDescription>
         </DialogHeader>
         <div className="space-y-4">
           <div>
-            <label htmlFor="username" className="text-sm font-medium">
+            <label htmlFor="username" className="text-sm font-medium text-[#2D3748]">
               Username
             </label>
             <Input
@@ -72,7 +72,7 @@ export function AdminLogin() {
             />
           </div>
           <div>
-            <label htmlFor="password" className="text-sm font-medium">
+            <label htmlFor="password" className="text-sm font-medium text-[#2D3748]">
               Password
             </label>
             <Input
@@ -93,12 +93,12 @@ export function AdminLogin() {
             <Button type="button" variant="outline" onClick={() => setOpen(false)}>
               Cancel
             </Button>
-            <Button onClick={handleLogin}>Login</Button>
+            <Button onClick={handleLogin} className="bg-[#3F9C35] hover:bg-[#2D5A2A] text-white">Login</Button>
           </div>
-          <div className="text-xs text-muted-foreground bg-muted p-2 rounded">
-            <strong>Demo credentials:</strong><br />
-            Username: admin<br />
-            Password: admin123
+          <div className="text-xs text-[#718096] bg-[#F7FAFC] p-2 rounded">
+            <strong className="text-[#2D3748]">Demo credentials:</strong><br />
+            Username: RSM-Admin<br />
+            Password: RSMkuwaitNex
           </div>
         </div>
       </DialogContent>

@@ -61,10 +61,10 @@ export function SocialMediaReachChart({ timeFilter }: SocialMediaReachChartProps
   }
 
   const getProfileVisits = () => [
-    { platform: "LinkedIn", visits: 2637, color: "#0077B5" },
-    { platform: "Facebook", visits: 1890, color: "#1877F2" },
-    { platform: "Instagram", visits: 890, color: "#E4405F" },
-    { platform: "Twitter", visits: 729, color: "#1DA1F2" },
+    { platform: "LinkedIn", visits: 2637, color: "#009CDE" },
+    { platform: "Facebook", visits: 1890, color: "#3F9C35" },
+    { platform: "Instagram", visits: 890, color: "#00153C" },
+    { platform: "Twitter", visits: 729, color: "#63666A" },
   ]
 
   const reachData = getReachData()
@@ -94,8 +94,8 @@ export function SocialMediaReachChart({ timeFilter }: SocialMediaReachChartProps
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           <Card>
             <CardHeader>
-              <CardTitle className="text-lg">LinkedIn Reach</CardTitle>
-              <CardDescription>Post reach performance</CardDescription>
+              <CardTitle className="text-lg text-[#2D3748]">LinkedIn Reach</CardTitle>
+              <CardDescription className="text-[#4A5568]">Post reach performance</CardDescription>
             </CardHeader>
             <CardContent>
               <ChartContainer config={chartConfig}>
@@ -104,7 +104,7 @@ export function SocialMediaReachChart({ timeFilter }: SocialMediaReachChartProps
                     <XAxis dataKey="period" />
                     <YAxis />
                     <ChartTooltip content={<ChartTooltipContent />} />
-                    <Bar dataKey="reach" fill="#0077B5" radius={[4, 4, 0, 0]} />
+                    <Bar dataKey="reach" fill="#009CDE" radius={[4, 4, 0, 0]} />
                   </BarChart>
                 </ResponsiveContainer>
               </ChartContainer>
@@ -113,8 +113,8 @@ export function SocialMediaReachChart({ timeFilter }: SocialMediaReachChartProps
 
           <Card>
             <CardHeader>
-              <CardTitle className="text-lg">Twitter Reach</CardTitle>
-              <CardDescription>Post reach performance</CardDescription>
+              <CardTitle className="text-lg text-[#2D3748]">Twitter Reach</CardTitle>
+              <CardDescription className="text-[#4A5568]">Post reach performance</CardDescription>
             </CardHeader>
             <CardContent>
               <ChartContainer config={chartConfig}>
@@ -123,7 +123,7 @@ export function SocialMediaReachChart({ timeFilter }: SocialMediaReachChartProps
                     <XAxis dataKey="period" />
                     <YAxis />
                     <ChartTooltip content={<ChartTooltipContent />} />
-                    <Bar dataKey="reach" fill="#1DA1F2" radius={[4, 4, 0, 0]} />
+                    <Bar dataKey="reach" fill="#63666A" radius={[4, 4, 0, 0]} />
                   </BarChart>
                 </ResponsiveContainer>
               </ChartContainer>
@@ -132,8 +132,8 @@ export function SocialMediaReachChart({ timeFilter }: SocialMediaReachChartProps
 
           <Card>
             <CardHeader>
-              <CardTitle className="text-lg">Facebook Reach</CardTitle>
-              <CardDescription>Post reach performance</CardDescription>
+              <CardTitle className="text-lg text-[#2D3748]">Facebook Reach</CardTitle>
+              <CardDescription className="text-[#4A5568]">Post reach performance</CardDescription>
             </CardHeader>
             <CardContent>
               <ChartContainer config={chartConfig}>
@@ -142,7 +142,7 @@ export function SocialMediaReachChart({ timeFilter }: SocialMediaReachChartProps
                     <XAxis dataKey="period" />
                     <YAxis />
                     <ChartTooltip content={<ChartTooltipContent />} />
-                    <Bar dataKey="reach" fill="#1877F2" radius={[4, 4, 0, 0]} />
+                    <Bar dataKey="reach" fill="#3F9C35" radius={[4, 4, 0, 0]} />
                   </BarChart>
                 </ResponsiveContainer>
               </ChartContainer>
@@ -151,8 +151,8 @@ export function SocialMediaReachChart({ timeFilter }: SocialMediaReachChartProps
 
           <Card>
             <CardHeader>
-              <CardTitle className="text-lg">Instagram Reach</CardTitle>
-              <CardDescription>Post reach performance</CardDescription>
+              <CardTitle className="text-lg text-[#2D3748]">Instagram Reach</CardTitle>
+              <CardDescription className="text-[#4A5568]">Post reach performance</CardDescription>
             </CardHeader>
             <CardContent>
               <ChartContainer config={chartConfig}>
@@ -161,7 +161,7 @@ export function SocialMediaReachChart({ timeFilter }: SocialMediaReachChartProps
                     <XAxis dataKey="period" />
                     <YAxis />
                     <ChartTooltip content={<ChartTooltipContent />} />
-                    <Bar dataKey="reach" fill="#E4405F" radius={[4, 4, 0, 0]} />
+                    <Bar dataKey="reach" fill="#00153C" radius={[4, 4, 0, 0]} />
                   </BarChart>
                 </ResponsiveContainer>
               </ChartContainer>
@@ -171,8 +171,8 @@ export function SocialMediaReachChart({ timeFilter }: SocialMediaReachChartProps
 
         <Card>
           <CardHeader>
-            <CardTitle>Social Media Profile Visits</CardTitle>
-            <CardDescription>Profile visits across all platforms</CardDescription>
+            <CardTitle className="text-[#2D3748]">Social Media Profile Visits</CardTitle>
+            <CardDescription className="text-[#4A5568]">Profile visits across all platforms</CardDescription>
           </CardHeader>
           <CardContent>
             <ChartContainer config={chartConfig}>
@@ -184,7 +184,7 @@ export function SocialMediaReachChart({ timeFilter }: SocialMediaReachChartProps
                   <Bar 
                     dataKey="visits" 
                     radius={[4, 4, 0, 0]}
-                    fill="#10B981"
+                    fill="#009CDE"
                   />
                 </BarChart>
               </ResponsiveContainer>

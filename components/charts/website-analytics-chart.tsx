@@ -86,8 +86,8 @@ export function WebsiteAnalyticsChart({ timeFilter }: WebsiteAnalyticsChartProps
       <div className="grid gap-6 md:grid-cols-2">
         <Card>
           <CardHeader>
-            <CardTitle>Website Analytics Performance</CardTitle>
-            <CardDescription>
+            <CardTitle className="text-[#2D3748]">Website Analytics Performance</CardTitle>
+            <CardDescription className="text-[#4A5568]">
               {timeFilter === "weekly" ? "Weekly" : timeFilter === "monthly" ? "Monthly" : "Annual"} website traffic
               trends
             </CardDescription>
@@ -123,23 +123,23 @@ export function WebsiteAnalyticsChart({ timeFilter }: WebsiteAnalyticsChartProps
 
         <Card>
           <CardHeader>
-            <CardTitle>Top 5 Most Visited Pages</CardTitle>
-            <CardDescription>Most popular content on your website</CardDescription>
+            <CardTitle className="text-[#2D3748]">Top 5 Most Visited Pages</CardTitle>
+            <CardDescription className="text-[#4A5568]">Most popular content on your website</CardDescription>
           </CardHeader>
           <CardContent>
             <div className="space-y-4">
               {topPages.map((page, index) => (
                 <div key={index} className="flex items-center justify-between">
                   <div className="flex items-center gap-3">
-                    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary text-primary-foreground text-sm font-medium">
+                    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#3F9C35] text-white text-sm font-medium">
                       {index + 1}
                     </div>
                     <div>
-                      <p className="text-sm font-medium">{page.page}</p>
-                      <p className="text-xs text-muted-foreground">{page.visits} visits</p>
+                      <p className="text-sm font-medium text-[#2D3748]">{page.page}</p>
+                      <p className="text-xs text-[#718096]">{page.visits} visits</p>
                     </div>
                   </div>
-                  <div className="text-sm font-medium">{page.percentage}%</div>
+                  <div className="text-sm font-medium text-[#2D3748]">{page.percentage}%</div>
                 </div>
               ))}
             </div>

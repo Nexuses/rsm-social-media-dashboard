@@ -15,7 +15,7 @@ export function AdminProvider({ children }: { children: ReactNode }) {
 
   const login = (username: string, password: string): boolean => {
     // Simple admin check - in production, this should be a proper authentication system
-    if (username === "admin" && password === "admin123") {
+    if (username === "RSM-Admin" && password === "RSMkuwaitNex") {
       setIsAdmin(true)
       return true
     }

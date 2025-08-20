@@ -44,8 +44,8 @@ export function SocialMediaDashboard() {
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
           <div>
-            <h1 className="text-3xl font-bold text-foreground">RSM Kuwait Social Media Analytics</h1>
-            <p className="text-muted-foreground">Comprehensive social media performance dashboard</p>
+            <h1 className="text-3xl font-bold text-[#2D3748]">RSM Kuwait Social Media Analytics</h1>
+            <p className="text-[#4A5568]">Comprehensive social media performance dashboard</p>
           </div>
           <div className="flex items-center gap-4">
             <Select value={timeFilter} onValueChange={(value: TimeFilter) => setTimeFilter(value)}>

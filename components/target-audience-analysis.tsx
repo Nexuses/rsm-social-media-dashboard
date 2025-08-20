@@ -7,49 +7,49 @@ import { AddDataButton } from "./add-data-button"
 
 export function TargetAudienceAnalysis() {
   const jobFunctionData = [
-    { name: "Accounting", value: 35, color: "#0088FE" },
-    { name: "Finance", value: 18, color: "#00C49F" },
-    { name: "Sales", value: 12, color: "#FFBB28" },
-    { name: "Operations", value: 10, color: "#FF8042" },
-    { name: "Business Development", value: 8, color: "#8884D8" },
-    { name: "Information Technology", value: 7, color: "#82CA9D" },
-    { name: "Human Resources", value: 5, color: "#FFC658" },
-    { name: "Marketing", value: 3, color: "#FF7C7C" },
-    { name: "Engineering", value: 1, color: "#8DD1E1" },
-    { name: "Education", value: 1, color: "#D084D0" },
+    { name: "Accounting", value: 35, color: "#009CDE" },
+    { name: "Finance", value: 18, color: "#3F9C35" },
+    { name: "Sales", value: 12, color: "#00153C" },
+    { name: "Operations", value: 10, color: "#63666A" },
+    { name: "Business Development", value: 8, color: "#009CDE" },
+    { name: "Information Technology", value: 7, color: "#3F9C35" },
+    { name: "Human Resources", value: 5, color: "#00153C" },
+    { name: "Marketing", value: 3, color: "#63666A" },
+    { name: "Engineering", value: 1, color: "#009CDE" },
+    { name: "Education", value: 1, color: "#3F9C35" },
   ]
 
   const industryData = [
-    { name: "Accounting", value: 28, color: "#0088FE" },
-    { name: "Financial Services", value: 22, color: "#00C49F" },
-    { name: "Banking", value: 18, color: "#FFBB28" },
-    { name: "IT Services", value: 12, color: "#FF8042" },
-    { name: "Management Consulting", value: 8, color: "#8884D8" },
-    { name: "Oil & Energy", value: 5, color: "#82CA9D" },
-    { name: "Construction", value: 3, color: "#FFC658" },
-    { name: "Retail", value: 2, color: "#FF7C7C" },
-    { name: "Food & Beverages", value: 1, color: "#8DD1E1" },
-    { name: "Real Estate", value: 1, color: "#D084D0" },
+    { name: "Accounting", value: 28, color: "#009CDE" },
+    { name: "Financial Services", value: 22, color: "#3F9C35" },
+    { name: "Banking", value: 18, color: "#00153C" },
+    { name: "IT Services", value: 12, color: "#63666A" },
+    { name: "Management Consulting", value: 8, color: "#009CDE" },
+    { name: "Oil & Energy", value: 5, color: "#3F9C35" },
+    { name: "Construction", value: 3, color: "#00153C" },
+    { name: "Retail", value: 2, color: "#63666A" },
+    { name: "Food & Beverages", value: 1, color: "#009CDE" },
+    { name: "Real Estate", value: 1, color: "#3F9C35" },
   ]
 
   const companySizeData = [
-    { name: "201-500 employees", value: 25, color: "#0088FE" },
-    { name: "10,001+ employees", value: 22, color: "#00C49F" },
-    { name: "1,001-5,000 employees", value: 20, color: "#FFBB28" },
-    { name: "11-50 employees", value: 15, color: "#FF8042" },
-    { name: "51-200 employees", value: 10, color: "#8884D8" },
-    { name: "501-1,000 employees", value: 5, color: "#82CA9D" },
-    { name: "5,001-10,000 employees", value: 2, color: "#FFC658" },
-    { name: "2-10 employees", value: 1, color: "#FF7C7C" },
+    { name: "201-500 employees", value: 25, color: "#009CDE" },
+    { name: "10,001+ employees", value: 22, color: "#3F9C35" },
+    { name: "1,001-5,000 employees", value: 20, color: "#00153C" },
+    { name: "11-50 employees", value: 15, color: "#63666A" },
+    { name: "51-200 employees", value: 10, color: "#009CDE" },
+    { name: "501-1,000 employees", value: 5, color: "#3F9C35" },
+    { name: "5,001-10,000 employees", value: 2, color: "#00153C" },
+    { name: "2-10 employees", value: 1, color: "#63666A" },
   ]
 
   const seniorityData = [
-    { name: "Senior", value: 45, color: "#0088FE" },
-    { name: "Entry", value: 25, color: "#00C49F" },
-    { name: "Manager", value: 15, color: "#FFBB28" },
-    { name: "Training", value: 8, color: "#FF8042" },
-    { name: "Director", value: 5, color: "#8884D8" },
-    { name: "Partner", value: 2, color: "#82CA9D" },
+    { name: "Senior", value: 45, color: "#009CDE" },
+    { name: "Entry", value: 25, color: "#3F9C35" },
+    { name: "Manager", value: 15, color: "#00153C" },
+    { name: "Training", value: 8, color: "#63666A" },
+    { name: "Director", value: 5, color: "#009CDE" },
+    { name: "Partner", value: 2, color: "#3F9C35" },
   ]
 
   const chartConfig = {
@@ -93,8 +93,8 @@ export function TargetAudienceAnalysis() {
       <div className="grid gap-6 md:grid-cols-2">
         <Card>
           <CardHeader>
-            <CardTitle>LinkedIn Clicks by Job Function</CardTitle>
-            <CardDescription>Distribution of clicks by professional roles</CardDescription>
+            <CardTitle className="text-[#2D3748]">LinkedIn Clicks by Job Function</CardTitle>
+            <CardDescription className="text-[#4A5568]">Distribution of clicks by professional roles</CardDescription>
           </CardHeader>
           <CardContent>
             <ChartContainer config={chartConfig}>
@@ -122,7 +122,7 @@ export function TargetAudienceAnalysis() {
               {jobFunctionData.slice(0, 6).map((item, index) => (
                 <div key={index} className="flex items-center gap-2">
                   <div className="h-3 w-3 rounded-full" style={{ backgroundColor: item.color }} />
-                  <span className="text-muted-foreground">
+                  <span className="text-[#718096]">
                     {item.name} ({item.value}%)
                   </span>
                 </div>
@@ -133,8 +133,8 @@ export function TargetAudienceAnalysis() {
 
         <Card>
           <CardHeader>
-            <CardTitle>LinkedIn Clicks by Industry</CardTitle>
-            <CardDescription>Distribution of clicks by industry sectors</CardDescription>
+            <CardTitle className="text-[#2D3748]">LinkedIn Clicks by Industry</CardTitle>
+            <CardDescription className="text-[#4A5568]">Distribution of clicks by industry sectors</CardDescription>
           </CardHeader>
           <CardContent>
             <ChartContainer config={chartConfig}>
@@ -162,7 +162,7 @@ export function TargetAudienceAnalysis() {
               {industryData.slice(0, 6).map((item, index) => (
                 <div key={index} className="flex items-center gap-2">
                   <div className="h-3 w-3 rounded-full" style={{ backgroundColor: item.color }} />
-                  <span className="text-muted-foreground">
+                  <span className="text-[#718096]">
                     {item.name} ({item.value}%)
                   </span>
                 </div>
@@ -173,8 +173,8 @@ export function TargetAudienceAnalysis() {
 
         <Card>
           <CardHeader>
-            <CardTitle>LinkedIn Clicks by Company Size</CardTitle>
-            <CardDescription>Distribution of clicks by company employee count</CardDescription>
+            <CardTitle className="text-[#2D3748]">LinkedIn Clicks by Company Size</CardTitle>
+            <CardDescription className="text-[#4A5568]">Distribution of clicks by company employee count</CardDescription>
           </CardHeader>
           <CardContent>
             <ChartContainer config={chartConfig}>
@@ -202,7 +202,7 @@ export function TargetAudienceAnalysis() {
               {companySizeData.slice(0, 4).map((item, index) => (
                 <div key={index} className="flex items-center gap-2">
                   <div className="h-3 w-3 rounded-full" style={{ backgroundColor: item.color }} />
-                  <span className="text-muted-foreground">
+                  <span className="text-[#718096]">
                     {item.name} ({item.value}%)
                   </span>
                 </div>
@@ -213,8 +213,8 @@ export function TargetAudienceAnalysis() {
 
         <Card>
           <CardHeader>
-            <CardTitle>LinkedIn Clicks by Seniority</CardTitle>
-            <CardDescription>Distribution of clicks by professional seniority level</CardDescription>
+            <CardTitle className="text-[#2D3748]">LinkedIn Clicks by Seniority</CardTitle>
+            <CardDescription className="text-[#4A5568]">Distribution of clicks by professional seniority level</CardDescription>
           </CardHeader>
           <CardContent>
             <ChartContainer config={chartConfig}>
@@ -242,7 +242,7 @@ export function TargetAudienceAnalysis() {
               {seniorityData.map((item, index) => (
                 <div key={index} className="flex items-center gap-2">
                   <div className="h-3 w-3 rounded-full" style={{ backgroundColor: item.color }} />
-                  <span className="text-muted-foreground">
+                  <span className="text-[#718096]">
                     {item.name} ({item.value}%)
                   </span>
                 </div>
