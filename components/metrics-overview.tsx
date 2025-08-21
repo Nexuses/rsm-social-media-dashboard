@@ -44,6 +44,13 @@ export function MetricsOverview({ timeFilter }: MetricsOverviewProps) {
     }
   }
 
+  // Check if we have enough data to show percentage comparisons
+  const hasEnoughDataForComparison = () => {
+    // For now, return false since we only have 1 month of data
+    // This should be updated when you add more months of data
+    return false
+  }
+
   const metrics = getMetrics()
 
   return (
@@ -63,7 +70,9 @@ export function MetricsOverview({ timeFilter }: MetricsOverviewProps) {
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold text-[#2D3748]">{formatNumber(metrics.newFollowers)}</div>
-            <p className="text-xs text-[#718096]">+12.5% from last {timeFilter.replace("ly", "")}</p>
+            {hasEnoughDataForComparison() && (
+              <p className="text-xs text-[#718096]">+12.5% from last {timeFilter.replace("ly", "")}</p>
+            )}
           </CardContent>
         </Card>
 
@@ -74,7 +83,9 @@ export function MetricsOverview({ timeFilter }: MetricsOverviewProps) {
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold text-[#2D3748]">{formatNumber(metrics.totalReach)}</div>
-            <p className="text-xs text-[#718096]">+15.3% from last {timeFilter.replace("ly", "")}</p>
+            {hasEnoughDataForComparison() && (
+              <p className="text-xs text-[#718096]">+15.3% from last {timeFilter.replace("ly", "")}</p>
+            )}
           </CardContent>
         </Card>
 
@@ -85,7 +96,9 @@ export function MetricsOverview({ timeFilter }: MetricsOverviewProps) {
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold text-[#2D3748]">{formatNumber(metrics.profileVisits)}</div>
-            <p className="text-xs text-[#718096]">+6.7% from last {timeFilter.replace("ly", "")}</p>
+            {hasEnoughDataForComparison() && (
+              <p className="text-xs text-[#718096]">+6.7% from last {timeFilter.replace("ly", "")}</p>
+            )}
           </CardContent>
         </Card>
 
@@ -96,7 +109,9 @@ export function MetricsOverview({ timeFilter }: MetricsOverviewProps) {
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold text-[#2D3748]">{formatNumber(metrics.websiteClicks)}</div>
-            <p className="text-xs text-[#718096]">+8.2% from last {timeFilter.replace("ly", "")}</p>
+            {hasEnoughDataForComparison() && (
+              <p className="text-xs text-[#718096]">+8.2% from last {timeFilter.replace("ly", "")}</p>
+            )}
           </CardContent>
         </Card>
       </div>
