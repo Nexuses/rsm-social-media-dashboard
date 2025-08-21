@@ -23,15 +23,15 @@ export function CompetitorAnalysis() {
     ],
     twitter: [
       { name: "RSM Kuwait", followers: "4.8K", position: 1, isRSM: true },
-      { name: "Morison Kuwait", followers: "2.3K", position: 2, isRSM: false },
-      { name: "KPMG Kuwait", followers: "1.1K", position: 3, isRSM: false },
+      { name: "Morison Kuwait", followers: "2.1K", position: 2, isRSM: false },
+      { name: "KPMG Kuwait", followers: "422.7K", position: 3, isRSM: false },
       { name: "Crowe Kuwait", followers: "30", position: 4, isRSM: false },
-      { name: "BDO Kuwait", followers: "16", position: 5, isRSM: false },
+      { name: "BDO Kuwait", followers: "24", position: 5, isRSM: false },
     ],
     instagram: [
       { name: "Morison Kuwait", followers: "12.4K", position: 1, isRSM: false },
       { name: "RSM Kuwait", followers: "7K", position: 2, isRSM: true },
-      { name: "KPMG Kuwait", followers: "3.3K", position: 3, isRSM: false },
+      { name: "KPMG Kuwait", followers: "153K", position: 3, isRSM: false },
       { name: "Baker Tilly Kuwait", followers: "1.2K", position: 4, isRSM: false },
       { name: "Grant Thornton Kuwait", followers: "516", position: 5, isRSM: false },
     ],
@@ -46,10 +46,10 @@ export function CompetitorAnalysis() {
   ]
 
   const rsmPopulationData = [
-    { name: "RSM Kuwait", followers: "41K", percentage: "0.95%", position: 1, isRSM: true },
-    { name: "RSM UK", followers: "109K", percentage: "0.098%", position: 2, isRSM: false },
-    { name: "RSM US", followers: "343K", percentage: "0.076%", position: 3, isRSM: false },
-    { name: "RSM India", followers: "96K", percentage: "0.0035%", position: 4, isRSM: false },
+    { name: "RSM Kuwait", followers: "41K", position: 1, isRSM: true },
+    { name: "RSM Egypt", followers: "9K", position: 2, isRSM: false },
+    { name: "RSM UAE", followers: "44.1K", position: 3, isRSM: false },
+    { name: "RSM Saudi Arabia", followers: "23K", position: 4, isRSM: false },
   ]
 
   // Facebook RSM Network Data
@@ -63,28 +63,27 @@ export function CompetitorAnalysis() {
 
   // Facebook RSM Population Data
   const facebookRsmPopulationData = [
-    { name: "RSM Kuwait", followers: "40.9K", percentage: "0.97%", position: 1, isRSM: true },
-    { name: "RSM Morocco", followers: "16K", percentage: "0.05%", position: 2, isRSM: false },
-    { name: "RSM SA", followers: "22K", percentage: "0.04%", position: 3, isRSM: false },
-    { name: "RSM EGY/TA", followers: "26.2K", percentage: "0.01%", position: 4, isRSM: false },
-    { name: "RSM EGY", followers: "20K", percentage: "0.04%", position: 5, isRSM: false },
+    { name: "RSM Kuwait", followers: "40.9K", position: 1, isRSM: true },
+    { name: "RSM Egypt", followers: "20K", position: 2, isRSM: false },
+    { name: "RSM UAE", followers: "1.1K", position: 3, isRSM: false },
+    { name: "RSM Saudi Arabia", followers: "22K", position: 4, isRSM: false },
   ]
 
   // Twitter RSM Network Data
   const twitterRsmNetworkData = [
-    { name: "RSM UK", followers: "18K", position: 1, isRSM: false },
-    { name: "RSM Global", followers: "10.2K", position: 2, isRSM: false },
-    { name: "RSM US", followers: "10.6K", position: 3, isRSM: false },
-    { name: "RSM SA", followers: "10K", position: 4, isRSM: false },
+    { name: "RSM UK", followers: "17.2K", position: 1, isRSM: false },
+    { name: "RSM Global", followers: "10K", position: 2, isRSM: false },
+    { name: "RSM US", followers: "10.5K", position: 3, isRSM: false },
+    { name: "RSM SA", followers: "128", position: 4, isRSM: false },
     { name: "RSM Kuwait", followers: "4.8K", position: 5, isRSM: true },
   ]
 
   // Twitter RSM Population Data
   const twitterRsmPopulationData = [
-    { name: "RSM Kuwait", followers: "4.8K", percentage: "0.11%", position: 1, isRSM: true },
-    { name: "RSM UK", followers: "18K", percentage: "0.026%", position: 2, isRSM: false },
-    { name: "RSM SA", followers: "10K", percentage: "0.015%", position: 3, isRSM: false },
-    { name: "RSM US", followers: "10.6K", percentage: "0.003%", position: 4, isRSM: false },
+    { name: "RSM Kuwait", followers: "4.8K", position: 1, isRSM: true },
+    { name: "RSM Egypt", followers: "264K", position: 2, isRSM: false },
+    { name: "RSM UAE", followers: "385K", position: 3, isRSM: false },
+    { name: "RSM Saudi Arabia", followers: "128", position: 4, isRSM: false },
   ]
 
   // Instagram RSM Network Data
@@ -98,10 +97,10 @@ export function CompetitorAnalysis() {
 
   // Instagram RSM Population Data
   const instagramRsmPopulationData = [
-    { name: "RSM Kuwait", followers: "7K", percentage: "0.11%", position: 1, isRSM: true },
-    { name: "RSM UK", followers: "2.9K", percentage: "0.002%", position: 2, isRSM: false },
-    { name: "RSM Brazil", followers: "5.8K", percentage: "0.001%", position: 3, isRSM: false },
-    { name: "RSM US", followers: "7.7K", percentage: "0.001%", position: 4, isRSM: false },
+    { name: "RSM Kuwait", followers: "7", position: 1, isRSM: true },
+    { name: "RSM Egypt", followers: "1.1K", position: 2, isRSM: false },
+    { name: "RSM UAE", followers: "864", position: 3, isRSM: false },
+    { name: "RSM Saudi Arabia", followers: "40", position: 4, isRSM: false },
   ]
 
   const handlePlatformSelect = (platform: string | null) => {
@@ -304,7 +303,7 @@ export function CompetitorAnalysis() {
                         <div>
                           <p className={`font-semibold text-base ${entity.isRSM ? "text-[#2D5A2A]" : "text-[#2D3748]"}`}>{entity.name}</p>
                           <p className="text-sm text-[#718096]">{entity.followers} followers</p>
-                          <p className="text-xs text-[#718096] font-medium">{entity.percentage} of Population</p>
+                          <p className="text-xs text-[#718096] font-medium"></p>
                         </div>
                       </div>
                       {entity.isRSM && <Badge variant="secondary" className="text-xs bg-[#3F9C35] text-white">Our Position</Badge>}
@@ -413,9 +412,8 @@ export function CompetitorAnalysis() {
                           {entity.position}
                         </div>
                         <div>
-                          <p className={`font-semibold text-base ${entity.isRSM ? "text-[#2D5A2A]" : "text-[#2D3748]"}`}>{entity.name}</p>
+                                                    <p className={`font-semibold text-base ${entity.isRSM ? "text-[#2D5A2A]" : "text-[#2D3748]"}`}>{entity.name}</p>
                           <p className="text-sm text-[#718096]">{entity.followers} followers</p>
-                          <p className="text-xs text-[#718096] font-medium">{entity.percentage} of Population</p>
                         </div>
                       </div>
                       {entity.isRSM && <Badge variant="secondary" className="text-xs bg-[#3F9C35] text-white">Our Position</Badge>}
@@ -526,7 +524,6 @@ export function CompetitorAnalysis() {
                         <div>
                           <p className={`font-semibold text-base ${entity.isRSM ? "text-[#2D5A2A]" : "text-[#2D3748]"}`}>{entity.name}</p>
                           <p className="text-sm text-[#718096]">{entity.followers} followers</p>
-                          <p className="text-xs text-[#718096] font-medium">{entity.percentage} of Population</p>
                         </div>
                       </div>
                       {entity.isRSM && <Badge variant="secondary" className="text-xs bg-[#3F9C35] text-white">Our Position</Badge>}
@@ -637,7 +634,6 @@ export function CompetitorAnalysis() {
                         <div>
                           <p className={`font-semibold text-base ${entity.isRSM ? "text-[#2D5A2A]" : "text-[#2D3748]"}`}>{entity.name}</p>
                           <p className="text-sm text-[#718096]">{entity.followers} followers</p>
-                          <p className="text-xs text-[#718096] font-medium">{entity.percentage} of Population</p>
                         </div>
                       </div>
                       {entity.isRSM && <Badge variant="secondary" className="text-xs bg-[#3F9C35] text-white">Our Position</Badge>}
