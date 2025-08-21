@@ -15,42 +15,33 @@ export function FollowersGrowthChart({ timeFilter }: FollowersGrowthChartProps) 
     switch (timeFilter) {
       case "weekly":
         return [
-          { period: "Week 1", followers: 32800, growth: 45 },
-          { period: "Week 2", followers: 32845, growth: 67 },
-          { period: "Week 3", followers: 32912, growth: 89 },
-          { period: "Week 4", followers: 33001, growth: 123 },
+          { period: "Week 1", followers: 41000, growth: 0 },
+          { period: "Week 2", followers: 41000, growth: 0 },
+          { period: "Week 3", followers: 41000, growth: 0 },
+          { period: "Week 4", followers: 41000, growth: 0 },
         ]
       case "annually":
         return [
-          { period: "2020", followers: 28500, growth: 2800 },
-          { period: "2021", followers: 31200, growth: 2700 },
-          { period: "2022", followers: 33900, growth: 2700 },
-          { period: "2023", followers: 36800, growth: 2900 },
-          { period: "2024", followers: 39800, growth: 3000 },
-          { period: "2025", followers: 42800, growth: 3000 },
+          { period: "2025", followers: 41000, growth: 0 },
         ]
-      default: // monthly
+      default: // monthly - starting fresh from July 2025
         return [
-          { period: "Dec", followers: 590, growth: 590 },
-          { period: "Jan", followers: 656, growth: 66 },
-          { period: "Feb", followers: 605, growth: -51 },
-          { period: "Mar", followers: 731, growth: 126 },
-          { period: "Apr", followers: 696, growth: -35 },
-          { period: "May", followers: 725, growth: 29 },
-          { period: "Jun", followers: 790, growth: 65 },
-          { period: "Jul", followers: 915, growth: 125 },
-          { period: "Aug", followers: 835, growth: -80 },
-          { period: "Sep", followers: 780, growth: -55 },
-          { period: "Oct", followers: 921, growth: 141 },
+          { period: "Jul 2025", followers: 41000, growth: 0 },
+          // Future months will be added here as data becomes available
+          // { period: "Aug 2025", followers: 41500, growth: 500 },
+          // { period: "Sep 2025", followers: 41800, growth: 300 },
+          // { period: "Oct 2025", followers: 42000, growth: 200 },
+          // { period: "Nov 2025", followers: 42200, growth: 200 },
+          // { period: "Dec 2025", followers: 42500, growth: 300 },
         ]
     }
   }
 
   const getChannelData = () => {
     const baseData = [
-      { platform: "LinkedIn", followers: 32800, color: "#009CDE" },
-      { platform: "Facebook", followers: 41800, color: "#3F9C35" },
-      { platform: "Instagram", followers: 6100, color: "#00153C" },
+      { platform: "LinkedIn", followers: 41000, color: "#009CDE" },
+      { platform: "Facebook", followers: 40900, color: "#3F9C35" },
+      { platform: "Instagram", followers: 7000, color: "#00153C" },
       { platform: "Twitter", followers: 4800, color: "#63666A" },
     ]
 
@@ -62,7 +53,7 @@ export function FollowersGrowthChart({ timeFilter }: FollowersGrowthChartProps) 
   const getPlatformData = (platform: string) => {
     const platformData = {
       linkedin: {
-        followers: 32800,
+        followers: 41000,
         engagement: 12.5,
         posts: 45,
         reach: 25000,
@@ -71,7 +62,7 @@ export function FollowersGrowthChart({ timeFilter }: FollowersGrowthChartProps) 
         color: "#009CDE"
       },
       facebook: {
-        followers: 41800,
+        followers: 40900,
         engagement: 8.3,
         posts: 32,
         reach: 18000,
@@ -89,7 +80,7 @@ export function FollowersGrowthChart({ timeFilter }: FollowersGrowthChartProps) 
         color: "#63666A"
       },
       instagram: {
-        followers: 6100,
+        followers: 7000,
         engagement: 9.2,
         posts: 38,
         reach: 3200,
@@ -131,7 +122,7 @@ export function FollowersGrowthChart({ timeFilter }: FollowersGrowthChartProps) 
             <CardTitle className="text-[#2D3748]">Followers Growth Trend</CardTitle>
             <CardDescription className="text-[#4A5568]">
               {timeFilter === "weekly" ? "Weekly" : timeFilter === "monthly" ? "Monthly" : "Annual"} followers growth
-              across all platforms
+              across all platforms starting from July 2025
             </CardDescription>
           </CardHeader>
           <CardContent>

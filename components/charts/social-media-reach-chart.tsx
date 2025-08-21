@@ -13,32 +13,20 @@ export function SocialMediaReachChart({ timeFilter }: SocialMediaReachChartProps
   const getReachData = () => {
     const baseData = {
       linkedin: [
-        { period: "Feb", reach: 19900 },
-        { period: "Mar", reach: 46135 },
-        { period: "Apr", reach: 32400 },
-        { period: "May", reach: 51800 },
-        { period: "Jun", reach: 55040 },
+        { period: "Jul", reach: 447 },
+        // Future months will be added here dynamically
       ],
       twitter: [
-        { period: "Feb", reach: 245000 },
-        { period: "Mar", reach: 50100 },
-        { period: "Apr", reach: 42700 },
-        { period: "May", reach: 70800 },
-        { period: "Jun", reach: 58000 },
+        { period: "Jul", reach: 0 },
+        // Future months will be added here dynamically
       ],
       facebook: [
-        { period: "Feb", reach: 37877 },
-        { period: "Mar", reach: 22827 },
-        { period: "Apr", reach: 20200 },
-        { period: "May", reach: 23677 },
-        { period: "Jun", reach: 53902 },
+        { period: "Jul", reach: 455 },
+        // Future months will be added here dynamically
       ],
       instagram: [
-        { period: "Feb", reach: 2767 },
-        { period: "Mar", reach: 2267 },
-        { period: "Apr", reach: 2170 },
-        { period: "May", reach: 2332 },
-        { period: "Jun", reach: 1311 },
+        { period: "Jul", reach: 563 },
+        // Future months will be added here dynamically
       ],
     }
 
@@ -60,24 +48,12 @@ export function SocialMediaReachChart({ timeFilter }: SocialMediaReachChartProps
     return baseData
   }
 
-  const getProfileVisits = () => [
-    { platform: "LinkedIn", visits: 2637, color: "#009CDE" },
-    { platform: "Facebook", visits: 1890, color: "#3F9C35" },
-    { platform: "Instagram", visits: 890, color: "#00153C" },
-    { platform: "Twitter", visits: 729, color: "#63666A" },
-  ]
-
   const reachData = getReachData()
-  const profileVisits = getProfileVisits()
 
   const chartConfig = {
     reach: {
       label: "Reach",
       color: "hsl(var(--chart-1))",
-    },
-    visits: {
-      label: "Profile Visits",
-      color: "hsl(var(--chart-2))",
     },
   }
 
@@ -86,7 +62,7 @@ export function SocialMediaReachChart({ timeFilter }: SocialMediaReachChartProps
       <div className="flex justify-end">
         <AddDataButton
           componentName="Social Media Reach Chart"
-          availableMetrics={["LinkedIn Reach", "Twitter Reach", "Facebook Reach", "Instagram Reach", "Profile Visits"]}
+          availableMetrics={["LinkedIn Reach", "Twitter Reach", "Facebook Reach", "Instagram Reach"]}
           onDataAdded={(data) => console.log("Social media reach data added:", data)}
         />
       </div>
@@ -168,27 +144,23 @@ export function SocialMediaReachChart({ timeFilter }: SocialMediaReachChartProps
             </CardContent>
           </Card>
         </div>
-
+      </div>
+      
+      {/* Table Section */}
+      <div className="space-y-4">
+        <div className="flex items-center justify-between">
+          <h3 className="text-lg font-semibold text-[#2D3748]">Content Calendar</h3>
+        </div>
         <Card>
-          <CardHeader>
-            <CardTitle className="text-[#2D3748]">Social Media Profile Visits</CardTitle>
-            <CardDescription className="text-[#4A5568]">Profile visits across all platforms</CardDescription>
-          </CardHeader>
-          <CardContent>
-            <ChartContainer config={chartConfig}>
-              <ResponsiveContainer width="100%" height={300}>
-                <BarChart data={profileVisits}>
-                  <XAxis dataKey="platform" />
-                  <YAxis />
-                  <ChartTooltip content={<ChartTooltipContent />} />
-                  <Bar 
-                    dataKey="visits" 
-                    radius={[4, 4, 0, 0]}
-                    fill="#009CDE"
-                  />
-                </BarChart>
-              </ResponsiveContainer>
-            </ChartContainer>
+          <CardContent className="p-0">
+            <iframe 
+              src="https://nexusesonline.notion.site/ebd/1996947358fa80c68280ee14b7280197" 
+              width="100%" 
+              height="600" 
+              frameBorder="0" 
+              allowFullScreen 
+              className="w-full"
+            />
           </CardContent>
         </Card>
       </div>

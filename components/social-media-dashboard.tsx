@@ -71,7 +71,7 @@ export function SocialMediaDashboard() {
           <TabsTrigger value="growth">Followers Growth</TabsTrigger>
           <TabsTrigger value="website">Website Performance</TabsTrigger>
           <TabsTrigger value="reach">Social Media Reach</TabsTrigger>
-          <TabsTrigger value="audience">Target Audience</TabsTrigger>
+          <TabsTrigger value="audience">LinkedIn Target Audience</TabsTrigger>
         </TabsList>
 
         <TabsContent value="growth" className="space-y-6">

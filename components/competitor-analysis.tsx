@@ -8,18 +8,18 @@ export function CompetitorAnalysis() {
 
   const competitorData = {
     linkedin: [
-      { name: "KPMG Kuwait", followers: "44.7K", position: 1, isRSM: false },
-      { name: "Baker Tilly Kuwait", followers: "34.1K", position: 2, isRSM: false },
-      { name: "RSM Kuwait", followers: "32.8K", position: 3, isRSM: true },
-      { name: "BDO Kuwait", followers: "9.3K", position: 4, isRSM: false },
-      { name: "PKF Kuwait", followers: "4K", position: 5, isRSM: false },
+      { name: "KPMG Kuwait", followers: "86K", position: 1, isRSM: false },
+      { name: "Baker Tilly Kuwait", followers: "49K", position: 2, isRSM: false },
+      { name: "RSM Kuwait", followers: "41K", position: 3, isRSM: true },
+      { name: "BDO Kuwait", followers: "23K", position: 4, isRSM: false },
+      { name: "PKF Kuwait", followers: "8K", position: 5, isRSM: false },
     ],
     facebook: [
-      { name: "RSM Kuwait", followers: "41.8K", position: 1, isRSM: true },
+      { name: "RSM Kuwait", followers: "40.9K", position: 1, isRSM: true },
       { name: "Baker Tilly Kuwait", followers: "10K", position: 2, isRSM: false },
-      { name: "KPMG Kuwait", followers: "2.7K", position: 3, isRSM: false },
-      { name: "Morison Kuwait", followers: "246", position: 4, isRSM: false },
-      { name: "Grant Thornton Kuwait", followers: "105", position: 5, isRSM: false },
+      { name: "KPMG Kuwait", followers: "2.8K", position: 3, isRSM: false },
+      { name: "Morison Kuwait", followers: "256", position: 4, isRSM: false },
+      { name: "Grant Thornton Kuwait", followers: "110", position: 5, isRSM: false },
     ],
     twitter: [
       { name: "RSM Kuwait", followers: "4.8K", position: 1, isRSM: true },
@@ -29,45 +29,45 @@ export function CompetitorAnalysis() {
       { name: "BDO Kuwait", followers: "16", position: 5, isRSM: false },
     ],
     instagram: [
-      { name: "Morison Kuwait", followers: "8.2K", position: 1, isRSM: false },
-      { name: "RSM Kuwait", followers: "6.1K", position: 2, isRSM: true },
-      { name: "KPMG Kuwait", followers: "1.8K", position: 3, isRSM: false },
-      { name: "Baker Tilly Kuwait", followers: "907", position: 4, isRSM: false },
-      { name: "Grant Thornton Kuwait", followers: "434", position: 5, isRSM: false },
+      { name: "Morison Kuwait", followers: "12.4K", position: 1, isRSM: false },
+      { name: "RSM Kuwait", followers: "7K", position: 2, isRSM: true },
+      { name: "KPMG Kuwait", followers: "3.3K", position: 3, isRSM: false },
+      { name: "Baker Tilly Kuwait", followers: "1.2K", position: 4, isRSM: false },
+      { name: "Grant Thornton Kuwait", followers: "516", position: 5, isRSM: false },
     ],
   }
 
   const rsmNetworkData = [
-    { name: "RSM US", followers: "178K", position: 1, isRSM: false },
-    { name: "RSM UK", followers: "71.6K", position: 2, isRSM: false },
-    { name: "RSM International", followers: "47.5K", position: 3, isRSM: false },
-    { name: "RSM Kuwait", followers: "32.8K", position: 4, isRSM: true },
-    { name: "RSM India", followers: "29K", position: 5, isRSM: false },
+    { name: "RSM US", followers: "343K", position: 1, isRSM: false },
+    { name: "RSM UK", followers: "109K", position: 2, isRSM: false },
+    { name: "RSM International", followers: "148K", position: 3, isRSM: false },
+    { name: "RSM Kuwait", followers: "41K", position: 4, isRSM: true },
+    { name: "RSM India", followers: "96K", position: 5, isRSM: false },
   ]
 
   const rsmPopulationData = [
-    { name: "RSM Kuwait", followers: "32.8K", percentage: "0.7%", position: 1, isRSM: true },
-    { name: "RSM UK", followers: "71.6K", percentage: "0.096%", position: 2, isRSM: false },
-    { name: "RSM US", followers: "178K", percentage: "0.046%", position: 3, isRSM: false },
-    { name: "RSM India", followers: "29K", percentage: "0.0015%", position: 4, isRSM: false },
+    { name: "RSM Kuwait", followers: "41K", percentage: "0.95%", position: 1, isRSM: true },
+    { name: "RSM UK", followers: "109K", percentage: "0.098%", position: 2, isRSM: false },
+    { name: "RSM US", followers: "343K", percentage: "0.076%", position: 3, isRSM: false },
+    { name: "RSM India", followers: "96K", percentage: "0.0035%", position: 4, isRSM: false },
   ]
 
   // Facebook RSM Network Data
   const facebookRsmNetworkData = [
-    { name: "RSM Kuwait", followers: "41.8K", position: 1, isRSM: true },
-    { name: "RSM Egypt/T.A", followers: "25K", position: 2, isRSM: false },
-    { name: "RSM SA", followers: "20K", position: 3, isRSM: false },
-    { name: "RSM Egypt", followers: "12K", position: 4, isRSM: false },
+    { name: "RSM Kuwait", followers: "40.9K", position: 1, isRSM: true },
+    { name: "RSM Egypt/T.A", followers: "26.2K", position: 2, isRSM: false },
+    { name: "RSM SA", followers: "22K", position: 3, isRSM: false },
+    { name: "RSM Egypt", followers: "20K", position: 4, isRSM: false },
     { name: "RSM Morocco", followers: "16K", position: 5, isRSM: false },
   ]
 
   // Facebook RSM Population Data
   const facebookRsmPopulationData = [
-    { name: "RSM Kuwait", followers: "41.8K", percentage: "0.98%", position: 1, isRSM: true },
-    { name: "RSM Morocco", followers: "16K", percentage: "0.04%", position: 2, isRSM: false },
-    { name: "RSM SA", followers: "20K", percentage: "0.03%", position: 3, isRSM: false },
-    { name: "RSM EGY/TA", followers: "25K", percentage: "0.02%", position: 4, isRSM: false },
-    { name: "RSM EGY", followers: "12K", percentage: "0.02%", position: 5, isRSM: false },
+    { name: "RSM Kuwait", followers: "40.9K", percentage: "0.97%", position: 1, isRSM: true },
+    { name: "RSM Morocco", followers: "16K", percentage: "0.05%", position: 2, isRSM: false },
+    { name: "RSM SA", followers: "22K", percentage: "0.04%", position: 3, isRSM: false },
+    { name: "RSM EGY/TA", followers: "26.2K", percentage: "0.01%", position: 4, isRSM: false },
+    { name: "RSM EGY", followers: "20K", percentage: "0.04%", position: 5, isRSM: false },
   ]
 
   // Twitter RSM Network Data
@@ -89,19 +89,19 @@ export function CompetitorAnalysis() {
 
   // Instagram RSM Network Data
   const instagramRsmNetworkData = [
-    { name: "RSM Kuwait", followers: "6.1K", position: 1, isRSM: true },
-    { name: "RSM US", followers: "6K", position: 2, isRSM: false },
-    { name: "RSM Brazil", followers: "3.4K", position: 3, isRSM: false },
-    { name: "RSM Indonesia", followers: "2.1K", position: 4, isRSM: false },
-    { name: "RSM UK", followers: "2K", position: 5, isRSM: false },
+    { name: "RSM Kuwait", followers: "7K", position: 1, isRSM: true },
+    { name: "RSM US", followers: "7.7K", position: 2, isRSM: false },
+    { name: "RSM Brazil", followers: "5.8K", position: 3, isRSM: false },
+    { name: "RSM Indonesia", followers: "4.6K", position: 4, isRSM: false },
+    { name: "RSM UK", followers: "2.9K", position: 5, isRSM: false },
   ]
 
   // Instagram RSM Population Data
   const instagramRsmPopulationData = [
-    { name: "RSM Kuwait", followers: "6.1K", percentage: "0.11%", position: 1, isRSM: true },
-    { name: "RSM UK", followers: "2K", percentage: "0.002%", position: 2, isRSM: false },
-    { name: "RSM Brazil", followers: "3.4K", percentage: "0.001%", position: 3, isRSM: false },
-    { name: "RSM US", followers: "6K", percentage: "0.001%", position: 4, isRSM: false },
+    { name: "RSM Kuwait", followers: "7K", percentage: "0.11%", position: 1, isRSM: true },
+    { name: "RSM UK", followers: "2.9K", percentage: "0.002%", position: 2, isRSM: false },
+    { name: "RSM Brazil", followers: "5.8K", percentage: "0.001%", position: 3, isRSM: false },
+    { name: "RSM US", followers: "7.7K", percentage: "0.001%", position: 4, isRSM: false },
   ]
 
   const handlePlatformSelect = (platform: string | null) => {
@@ -283,7 +283,7 @@ export function CompetitorAnalysis() {
             <Card className="min-h-[400px] flex flex-col">
               <CardHeader className="pb-4">
                 <CardTitle className="text-xl font-semibold text-[#2D5A2A]">RSM Kuwait Position on LinkedIn</CardTitle>
-                <CardDescription className="text-base text-[#4A5568] font-medium">As a percentage of population (Within RSM Network)</CardDescription>
+                <CardDescription className="text-base text-[#4A5568] font-medium">Within RSM MENA Network</CardDescription>
               </CardHeader>
               <CardContent className="flex-1">
                 <div className="space-y-4">
@@ -394,7 +394,7 @@ export function CompetitorAnalysis() {
             <Card className="min-h-[400px] flex flex-col">
               <CardHeader className="pb-4">
                 <CardTitle className="text-xl font-semibold text-[#2D5A2A]">RSM Kuwait Position on Facebook</CardTitle>
-                <CardDescription className="text-base text-[#4A5568] font-medium">As a percentage of population (Within RSM Network)</CardDescription>
+                <CardDescription className="text-base text-[#4A5568] font-medium">Within RSM MENA Network</CardDescription>
               </CardHeader>
               <CardContent className="flex-1">
                 <div className="space-y-4">
@@ -505,7 +505,7 @@ export function CompetitorAnalysis() {
             <Card className="min-h-[400px] flex flex-col">
               <CardHeader className="pb-4">
                 <CardTitle className="text-xl font-semibold text-[#2D5A2A]">RSM Kuwait Position on Twitter</CardTitle>
-                <CardDescription className="text-base text-[#4A5568] font-medium">As a percentage of population (Within RSM Network)</CardDescription>
+                <CardDescription className="text-base text-[#4A5568] font-medium">Within RSM MENA Network</CardDescription>
               </CardHeader>
               <CardContent className="flex-1">
                 <div className="space-y-4">
@@ -616,7 +616,7 @@ export function CompetitorAnalysis() {
             <Card className="min-h-[400px] flex flex-col">
               <CardHeader className="pb-4">
                 <CardTitle className="text-xl font-semibold text-[#2D5A2A]">RSM Kuwait Position on Instagram</CardTitle>
-                <CardDescription className="text-base text-[#4A5568] font-medium">As a percentage of population (Within RSM Network)</CardDescription>
+                <CardDescription className="text-base text-[#4A5568] font-medium">Within RSM MENA Network</CardDescription>
               </CardHeader>
               <CardContent className="flex-1">
                 <div className="space-y-4">

@@ -7,59 +7,61 @@ import { AddDataButton } from "./add-data-button"
 
 export function TargetAudienceAnalysis() {
   const jobFunctionData = [
-    { name: "Accounting", value: 35, color: "#009CDE" },
-    { name: "Finance", value: 18, color: "#3F9C35" },
-    { name: "Sales", value: 12, color: "#00153C" },
-    { name: "Operations", value: 10, color: "#63666A" },
-    { name: "Business Development", value: 8, color: "#009CDE" },
-    { name: "Information Technology", value: 7, color: "#3F9C35" },
-    { name: "Human Resources", value: 5, color: "#00153C" },
-    { name: "Marketing", value: 3, color: "#63666A" },
-    { name: "Engineering", value: 1, color: "#009CDE" },
-    { name: "Education", value: 1, color: "#3F9C35" },
+    { name: "Accounting", value: 423, percentage: 18, color: "#009CDE" },
+    { name: "Information Technology", value: 122, percentage: 5.2, color: "#3F9C35" },
+    { name: "Finance", value: 121, percentage: 5.2, color: "#00153C" },
+    { name: "Engineering", value: 106, percentage: 4.5, color: "#63666A" },
+    { name: "Operations", value: 87, percentage: 3.7, color: "#009CDE" },
+    { name: "Business Development", value: 82, percentage: 3.5, color: "#3F9C35" },
+    { name: "Sales", value: 76, percentage: 3.2, color: "#00153C" },
+    { name: "Human Resources", value: 46, percentage: 2.0, color: "#63666A" },
+    { name: "Marketing", value: 41, percentage: 1.7, color: "#009CDE" },
+    { name: "Education", value: 37, percentage: 1.6, color: "#3F9C35" },
   ]
 
   const industryData = [
-    { name: "Accounting", value: 28, color: "#009CDE" },
-    { name: "Financial Services", value: 22, color: "#3F9C35" },
-    { name: "Banking", value: 18, color: "#00153C" },
-    { name: "IT Services", value: 12, color: "#63666A" },
-    { name: "Management Consulting", value: 8, color: "#009CDE" },
-    { name: "Oil & Energy", value: 5, color: "#3F9C35" },
-    { name: "Construction", value: 3, color: "#00153C" },
-    { name: "Retail", value: 2, color: "#63666A" },
-    { name: "Food & Beverages", value: 1, color: "#009CDE" },
-    { name: "Real Estate", value: 1, color: "#3F9C35" },
+    { name: "Accounting", value: 918, percentage: 39.1, color: "#009CDE" },
+    { name: "Financial Services", value: 395, percentage: 16.8, color: "#3F9C35" },
+    { name: "IT Services and IT Consulting", value: 250, percentage: 10.6, color: "#00153C" },
+    { name: "Technology, Information and Internet", value: 109, percentage: 4.6, color: "#63666A" },
+    { name: "Business Consulting and Services", value: 93, percentage: 4.0, color: "#009CDE" },
+    { name: "Banking", value: 89, percentage: 3.8, color: "#3F9C35" },
+    { name: "Software Development", value: 85, percentage: 3.6, color: "#00153C" },
+    { name: "Education", value: 44, percentage: 1.9, color: "#63666A" },
+    { name: "Oil and Gas", value: 41, percentage: 1.7, color: "#009CDE" },
+    { name: "Higher Education", value: 40, percentage: 1.7, color: "#3F9C35" },
   ]
 
   const companySizeData = [
-    { name: "201-500 employees", value: 25, color: "#009CDE" },
-    { name: "10,001+ employees", value: 22, color: "#3F9C35" },
-    { name: "1,001-5,000 employees", value: 20, color: "#00153C" },
-    { name: "11-50 employees", value: 15, color: "#63666A" },
-    { name: "51-200 employees", value: 10, color: "#009CDE" },
-    { name: "501-1,000 employees", value: 5, color: "#3F9C35" },
-    { name: "5,001-10,000 employees", value: 2, color: "#00153C" },
-    { name: "2-10 employees", value: 1, color: "#63666A" },
+    { name: "201-500 employees", value: 287, percentage: 12.2, color: "#009CDE" },
+    { name: "1001-5000 employees", value: 229, percentage: 9.8, color: "#3F9C35" },
+    { name: "10,001+ employees", value: 227, percentage: 9.7, color: "#00153C" },
+    { name: "11-50 employees", value: 225, percentage: 9.6, color: "#63666A" },
+    { name: "51-200 employees", value: 220, percentage: 9.4, color: "#009CDE" },
+    { name: "501-1000 employees", value: 128, percentage: 5.5, color: "#3F9C35" },
+    { name: "5001-10,000 employees", value: 39, percentage: 1.7, color: "#00153C" },
+    { name: "1-10 employees", value: 34, percentage: 1.4, color: "#63666A" },
+    { name: "Others", value: 959, percentage: 40.8, color: "#009CDE" },
   ]
 
   const seniorityData = [
-    { name: "Senior", value: 45, color: "#009CDE" },
-    { name: "Entry", value: 25, color: "#3F9C35" },
-    { name: "Manager", value: 15, color: "#00153C" },
-    { name: "Training", value: 8, color: "#63666A" },
-    { name: "Director", value: 5, color: "#009CDE" },
-    { name: "Partner", value: 2, color: "#3F9C35" },
+    { name: "Senior", value: 711, percentage: 30.3, color: "#009CDE" },
+    { name: "Entry", value: 513, percentage: 21.8, color: "#3F9C35" },
+    { name: "Manager", value: 122, percentage: 5.2, color: "#00153C" },
+    { name: "Training", value: 61, percentage: 2.6, color: "#63666A" },
+    { name: "Director", value: 31, percentage: 1.3, color: "#009CDE" },
+    { name: "CXO", value: 14, percentage: 0.6, color: "#3F9C35" },
+    { name: "Others", value: 896, percentage: 38.2, color: "#00153C" },
   ]
 
   const chartConfig = {
-    value: {
+    percentage: {
       label: "Percentage",
     },
   }
 
   const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent }: any) => {
-    if (percent < 0.05) return null // Don't show labels for slices less than 5%
+    if (percent < 5) return null // Don't show labels for slices less than 5%
 
     const RADIAN = Math.PI / 180
     const radius = innerRadius + (outerRadius - innerRadius) * 0.5
@@ -76,7 +78,7 @@ export function TargetAudienceAnalysis() {
         fontSize={12}
         fontWeight="bold"
       >
-        {`${(percent * 100).toFixed(0)}%`}
+        {`${percent.toFixed(1)}%`}
       </text>
     )
   }
@@ -108,22 +110,36 @@ export function TargetAudienceAnalysis() {
                     label={renderCustomizedLabel}
                     outerRadius={100}
                     fill="#8884d8"
-                    dataKey="value"
+                    dataKey="percentage"
                   >
                     {jobFunctionData.map((entry, index) => (
                       <Cell key={`cell-${index}`} fill={entry.color} />
                     ))}
                   </Pie>
-                  <ChartTooltip content={<ChartTooltipContent />} />
+                  <ChartTooltip 
+                    content={({ active, payload }) => {
+                      if (active && payload && payload.length) {
+                        const data = payload[0].payload;
+                        return (
+                          <div className="bg-white p-3 border rounded-lg shadow-lg">
+                            <p className="font-semibold text-gray-800">{data.name}</p>
+                            <p className="text-sm text-gray-600">Count: {data.value}</p>
+                            <p className="text-sm text-gray-600">Percentage: {data.percentage}%</p>
+                          </div>
+                        );
+                      }
+                      return null;
+                    }}
+                  />
                 </PieChart>
               </ResponsiveContainer>
             </ChartContainer>
             <div className="mt-4 grid grid-cols-2 gap-2 text-sm">
-              {jobFunctionData.slice(0, 6).map((item, index) => (
+              {jobFunctionData.map((item, index) => (
                 <div key={index} className="flex items-center gap-2">
                   <div className="h-3 w-3 rounded-full" style={{ backgroundColor: item.color }} />
                   <span className="text-[#718096]">
-                    {item.name} ({item.value}%)
+                    {item.name} ({item.value}, {item.percentage}%)
                   </span>
                 </div>
               ))}
@@ -148,22 +164,36 @@ export function TargetAudienceAnalysis() {
                     label={renderCustomizedLabel}
                     outerRadius={100}
                     fill="#8884d8"
-                    dataKey="value"
+                    dataKey="percentage"
                   >
                     {industryData.map((entry, index) => (
                       <Cell key={`cell-${index}`} fill={entry.color} />
                     ))}
                   </Pie>
-                  <ChartTooltip content={<ChartTooltipContent />} />
+                  <ChartTooltip 
+                    content={({ active, payload }) => {
+                      if (active && payload && payload.length) {
+                        const data = payload[0].payload;
+                        return (
+                          <div className="bg-white p-3 border rounded-lg shadow-lg">
+                            <p className="font-semibold text-gray-800">{data.name}</p>
+                            <p className="text-sm text-gray-600">Count: {data.value}</p>
+                            <p className="text-sm text-gray-600">Percentage: {data.percentage}%</p>
+                          </div>
+                        );
+                      }
+                      return null;
+                    }}
+                  />
                 </PieChart>
               </ResponsiveContainer>
             </ChartContainer>
             <div className="mt-4 grid grid-cols-2 gap-2 text-sm">
-              {industryData.slice(0, 6).map((item, index) => (
+              {industryData.map((item, index) => (
                 <div key={index} className="flex items-center gap-2">
                   <div className="h-3 w-3 rounded-full" style={{ backgroundColor: item.color }} />
                   <span className="text-[#718096]">
-                    {item.name} ({item.value}%)
+                    {item.name} ({item.value}, {item.percentage}%)
                   </span>
                 </div>
               ))}
@@ -188,22 +218,36 @@ export function TargetAudienceAnalysis() {
                     label={renderCustomizedLabel}
                     outerRadius={100}
                     fill="#8884d8"
-                    dataKey="value"
+                    dataKey="percentage"
                   >
                     {companySizeData.map((entry, index) => (
                       <Cell key={`cell-${index}`} fill={entry.color} />
                     ))}
                   </Pie>
-                  <ChartTooltip content={<ChartTooltipContent />} />
+                  <ChartTooltip 
+                    content={({ active, payload }) => {
+                      if (active && payload && payload.length) {
+                        const data = payload[0].payload;
+                        return (
+                          <div className="bg-white p-3 border rounded-lg shadow-lg">
+                            <p className="font-semibold text-gray-800">{data.name}</p>
+                            <p className="text-sm text-gray-600">Count: {data.value}</p>
+                            <p className="text-sm text-gray-600">Percentage: {data.percentage}%</p>
+                          </div>
+                        );
+                      }
+                      return null;
+                    }}
+                  />
                 </PieChart>
               </ResponsiveContainer>
             </ChartContainer>
             <div className="mt-4 grid grid-cols-1 gap-2 text-sm">
-              {companySizeData.slice(0, 4).map((item, index) => (
+              {companySizeData.map((item, index) => (
                 <div key={index} className="flex items-center gap-2">
                   <div className="h-3 w-3 rounded-full" style={{ backgroundColor: item.color }} />
                   <span className="text-[#718096]">
-                    {item.name} ({item.value}%)
+                    {item.name} ({item.value}, {item.percentage}%)
                   </span>
                 </div>
               ))}
@@ -228,13 +272,27 @@ export function TargetAudienceAnalysis() {
                     label={renderCustomizedLabel}
                     outerRadius={100}
                     fill="#8884d8"
-                    dataKey="value"
+                    dataKey="percentage"
                   >
                     {seniorityData.map((entry, index) => (
                       <Cell key={`cell-${index}`} fill={entry.color} />
                     ))}
                   </Pie>
-                  <ChartTooltip content={<ChartTooltipContent />} />
+                  <ChartTooltip 
+                    content={({ active, payload }) => {
+                      if (active && payload && payload.length) {
+                        const data = payload[0].payload;
+                        return (
+                          <div className="bg-white p-3 border rounded-lg shadow-lg">
+                            <p className="font-semibold text-gray-800">{data.name}</p>
+                            <p className="text-sm text-gray-600">Count: {data.value}</p>
+                            <p className="text-sm text-gray-600">Percentage: {data.percentage}%</p>
+                          </div>
+                        );
+                      }
+                      return null;
+                    }}
+                  />
                 </PieChart>
               </ResponsiveContainer>
             </ChartContainer>
@@ -243,7 +301,7 @@ export function TargetAudienceAnalysis() {
                 <div key={index} className="flex items-center gap-2">
                   <div className="h-3 w-3 rounded-full" style={{ backgroundColor: item.color }} />
                   <span className="text-[#718096]">
-                    {item.name} ({item.value}%)
+                    {item.name} ({item.value}, {item.percentage}%)
                   </span>
                 </div>
               ))}
